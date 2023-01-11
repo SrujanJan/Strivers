@@ -9,10 +9,12 @@ cout<<endl;
 return;
 
     }
-   
+//not pick or not take condition
     subsequenc(arr,index+1,output);
- output.push_back(arr[index]);
+    output.push_back(arr[index]);
+    //element is added so pick condition
 subsequenc(arr,index+1,output);
+    output.pop_back();
 }
 int main(){
 int n;
