@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include<vector>
+
 using namespace std;
 class solution{
     private:
@@ -13,7 +15,7 @@ class solution{
         }
     }
     public:
-    vector<int>dfs(int e,vector<int>adj[]){
+    vector<int>dfs(const int e,vector<int>adj[]){
 int start=1;
 vector<int>ls;
 int vis[e+1]={0};
