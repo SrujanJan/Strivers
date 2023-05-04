@@ -7,8 +7,8 @@ class Solution{
 colour[start]=0;
         queue<int>q;
         q.push(start);
-       
-        while(!q.empty()){
+        
+          while(!q.empty()){
             int node=q.front();
             q.pop();
             for(auto it : adj[node]){
