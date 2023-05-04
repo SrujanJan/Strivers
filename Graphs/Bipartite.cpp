@@ -2,7 +2,7 @@
 using namespace std;
 class Solution{
     public:
-    bool check(int start,int v,vector<int>adj[],int colour[]){
+    bool check(int start,vector<int>adj[],int colour[]){
 //declare a queue 
 colour[start]=0;
         queue<int>q;
@@ -35,7 +35,7 @@ colour[start]=0;
         }
         for(int i=0;i<v;i++){
             if(colour[i]==-1)
-            {if(check(i,v,adj,colour)==false)return false;}
+            {if(check(i,adj,colour)==false)return false;}
         }
         return true;
     }
