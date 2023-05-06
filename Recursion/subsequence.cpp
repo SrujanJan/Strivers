@@ -5,6 +5,7 @@ void subsequenc(vector<int>arr, int index=0,vector<int> output = {}){
 for(auto i : output){
     cout<<i<<" ";
 }
+if(output.size()==0)cout<<"{}";
 cout<<endl;
 return;
 
